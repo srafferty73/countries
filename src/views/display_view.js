@@ -27,7 +27,8 @@ DisplayView.prototype.render = function (country) {
 
   const languageHeading = this.createElement('h2', "Languages:");
   this.container.appendChild(languageHeading);
-  const languages = this.createElement('p', country.languages.name);
+  const languages = this.createElement('p', country.languages[0].name);
+  console.log(languages);
   this.container.appendChild(languages);
 
 };
@@ -37,8 +38,6 @@ DisplayView.prototype.createElement = function (elementType, text) {
   element.textContent = text;
   return element;
 };
-
-  // TO DO RENDER
 
 };
 
