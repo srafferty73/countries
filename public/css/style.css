@@ -1,0 +1,10 @@
+img.medium-image {
+  width: 30vw;
+  min-width: 293px;
+  border: 1px solid black;
+}
+
+body {
+  background-color: silver;
+  font-family: 'Merriweather', serif;
+}
